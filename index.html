@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript Keyboard</title>
+	<link rel="stylesheet" type="text/css" href="keyboard.css">
+</head>
+<body>
+<div class="container">
+	<div class="Keyboard">
+		<h1>Virtual Keyboard</h1>
+		<div class="display" id="display">
+		</div>
+		<div id="buttons" class="buttons">
+			<div class="row_1">
+				<button onclick="keys('`','~')" class="key">`<sup>~</sup></button>
+				<button onclick="keys('1','!')" class="key">1<sup>!</sup></button>
+				<button onclick="keys('2','@')" class="key">2<sup>@</sup></button>
+				<button onclick="keys('3','#')" class="key">3<sup>#</sup></button>
+				<button onclick="keys('4','$')" class="key">4<sup>$</sup></button>
+				<button onclick="keys('5','%')" class="key">5<sup>%</sup></button>
+				<button onclick="keys('6','^')" class="key">6<sup>^</sup></button>
+				<button onclick="keys('7','&')" class="key">7<sup>&</sup></button>
+				<button onclick="keys('8','*')" class="key">8<sup>*</sup></button>
+				<button onclick="keys('9','(')" class="key">9<sup>(</sup></button>
+				<button onclick="keys('0',')')" class="key">0<sup>)</sup></button>
+				<button onclick="keys('_','-')" class="key">_<sup>-</sup></button>
+				<button onclick="funcDel()" class="BackSpace">BackSpace</button>
+			</div>
+
+			<div class="row_2">
+				<button onclick="funcTab()" class="key">Tab</button>
+				<button onclick="keys('q','Q')" class="key">q<sup>Q</sup></button>
+				<button onclick="keys('w','W')" class="key">w<sup>W</sup></button>
+				<button onclick="keys('e','E')" class="key">e<sup>E</sup></button>
+				<button onclick="keys('r','R')" class="key">r<sup>R</sup></button>
+				<button onclick="keys('t','T')" class="key">t<sup>T</sup></button>
+				<button onclick="keys('y','Y')" class="key">y<sup>Y</sup></button>
+				<button onclick="keys('u','U')" class="key">u<sup>U</sup></button>
+				<button onclick="keys('i','I')" class="key">i<sup>I</sup></button>
+				<button onclick="keys('o','O')" class="key">o<sup>O</sup></button>
+				<button onclick="keys('p','P')" class="key">p<sup>P</sup></button>
+				<button onclick="keys('[','{')" class="key">[<sup>{</sup></button>
+				<button onclick="keys(']','}')" class="key">]<sup>}</sup></button>
+				<button onclick="keys('\\','|')" class="key">\<sup>|</sup></button>
+			</div>
+
+			<div class="row_3">
+				<button onclick="funcCL()" class="CapsLock">CapsLock<sup>|</sup></button>
+				<button onclick="keys('a','A')" class="key">a<sup>A</sup></button>
+				<button onclick="keys('s','S')" class="key">s<sup>S</sup></button>
+				<button onclick="keys('d','D')" class="key">d<sup>D</sup></button>
+				<button onclick="keys('f','F')" class="key">f<sup>F</sup></button>
+				<button onclick="keys('g','G')" class="key">g<sup>G</sup></button>
+				<button onclick="keys('h','H')" class="key">h<sup>H</sup></button>
+				<button onclick="keys('j','J')" class="key">j<sup>J</sup></button>
+				<button onclick="keys('k','K')" class="key">k<sup>K</sup></button>
+				<button onclick="keys('l','L')" class="key">l<sup>L</sup></button>
+				<button onclick="keys(';',':')" class="key">;<sup>:</sup></button>
+				<button onclick="funcSc7()" class="key">'<sup>"</sup></button>
+				<button onclick="funcEnter()" class="enter">Enter</button>
+			</div>
+
+			<div class="row_4">
+				<button onclick="funcClear()" class="Shift">Clear</button>
+				<button onclick="keys('z','Z')" class="key">z<sup>Z</sup></button>
+				<button onclick="keys('x','X')" class="key">x<sup>X</sup></button>
+				<button onclick="keys('c','C')" class="key">c<sup>C</sup></button>
+				<button onclick="keys('v','V')" class="key">v<sup>V</sup></button>
+				<button onclick="keys('b','B')" class="key">b<sup>B</sup></button>
+				<button onclick="keys('n','N')" class="key">n<sup>N</sup></button>
+				<button onclick="keys('m','M')" class="key">m<sup>M</sup></button>
+				<button onclick="keys(',','<')" class="key">,<sup><</sup></button>
+				<button onclick="keys('.','>')" class="key">.<sup>></sup></button>
+				<button onclick="keys('/','?')" class="key">/<sup>?</sup></button>
+				<button onclick="funcShift()" class="Shift">Shift</button>
+			</div>
+
+			<div class="row_5">
+				<button onclick="funcSpace()" class="Space">Space</button>
+			</div>
+			<div><button id="submit" onclick="onSubmit()">Submit</button></div>
+		</div>
+	</div>
+</div>
+<!-- JavaScript Area -->
+<script type="text/javascript" src="keyboard-handler.js"></script>
+</body>
+</html>
